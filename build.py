@@ -4,10 +4,6 @@ import numpy
 from Cython.Build import cythonize
 from Cython.Distutils import build_ext
 
-modules = [
-    "vits/monotonic_align/core.pyx",
-]
-
 extensions = [
     Extension("vits.monotonic_align.core",
               ["vits/monotonic_align/core.pyx"],
